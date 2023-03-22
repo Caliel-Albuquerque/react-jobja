@@ -2,14 +2,16 @@ import React from "react";
 
 import "./../styles/FormsLogin.css"
 
-export function FormsLogin(){
+export function FormsLogin(props){
+
+    console.log(props)
     return(
         <>
         
             <div className="containerFormsLogin">
 
 
-                <div className="formLoginStudant">
+                <div className={props.styleStudant}>
                     <form className="formStudant" action="">
                         <input type="text" required placeholder="email"/>
                         <input type="password" required placeholder="senha"/>
@@ -19,7 +21,7 @@ export function FormsLogin(){
 
                 </div>
 
-                <div className="formLoginCompany">
+                <div className={props.styleCompany}>
                     <form className="formCompany" action="">
                         <input type="text" required placeholder="cnpj"/>
                         <input type="password" required placeholder="senha"/>

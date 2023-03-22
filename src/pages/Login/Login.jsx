@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FormsLogin } from "./components/FormsLogin";
 
 export function Login(){
+
+    const [styleNoneStudant, setStyleNoneStudant] = useState("")
+    const [styleNoneCompany, setStyleNoneCompany] = useState("noneForm")
+
+    function handleStyleButtonCompany()  {
+        setStyleNoneStudant("noneForm")
+        setStyleNoneCompany("")
+    }
+
+    function handleStyleButtonStudant()  {
+        setStyleNoneStudant("")
+        setStyleNoneCompany("noneForm")
+    }
+    
     return(
         <>
             <div className="containerBtn">
-                <button>Estudante</button>
-                <button>Empresa</button>
+                <button onClick={handleStyleButtonStudant}>Estudante</button>
+                <button onClick={handleStyleButtonCompany}>Empresa</button>
             </div>
 
 
 
-            <FormsLogin/>
+            <FormsLogin 
+                styleStudant={styleNoneStudant}
+                styleCompany={styleNoneCompany}
+            />
         </>
     )
 }

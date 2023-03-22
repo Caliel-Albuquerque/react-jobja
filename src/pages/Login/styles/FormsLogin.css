@@ -12,3 +12,6 @@
     flex-direction: column;
 }
 
+.noneForm{
+    display: none;
+}
