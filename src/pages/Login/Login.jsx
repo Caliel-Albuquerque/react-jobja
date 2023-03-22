@@ -1,10 +1,18 @@
 import React from "react";
 
+import { FormsLogin } from "./components/FormsLogin";
 
 export function Login(){
     return(
         <>
-            <h1>Login: </h1>
+            <div className="containerBtn">
+                <button>Estudante</button>
+                <button>Empresa</button>
+            </div>
+
+
+
+            <FormsLogin/>
         </>
     )
 }

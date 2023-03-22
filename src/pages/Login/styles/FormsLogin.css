@@ -1,0 +1,14 @@
+.containerFormsLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.formStudant, .formCompany{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
