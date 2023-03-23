@@ -1,6 +1,16 @@
-const USER_COMPANY = {
-    cnpj: "12345",
-    password: 12345
-}
+const JOBS = [
+    {
+        id: 0,
+        nameCompany: "",
+        nameJob: "",
+        logo: "C:\Users\calie\Documents\T.I\JobJá\react-jobja\public\imgs\Company logo.png",
+        bg: "C:\Users\calie\Documents\T.I\JobJá\react-jobja\public\imgs\backgroundJob.png",
+        description: "",
+        salary: 0,
+        requires: [
+            ""
+        ] 
+    }
+]
 
-export default USER_COMPANY
+export default JOBS;
