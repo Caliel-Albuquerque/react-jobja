@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.logoSenac{
+  margin-bottom: 50px;
+}
+
+div.containerBtn > button:nth-child(1){
+  width: 139px;
+}
+
+div.containerBtn > button:nth-child(2){
+  width: 139px;
+}

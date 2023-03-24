@@ -4,6 +4,7 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 2rem;
+
 }
 
 .formStudant, .formCompany{
@@ -14,4 +15,37 @@
 
 .noneForm{
     display: none;
+}
+
+
+form > input[type=text]:nth-child(1){
+    padding-left: 10px;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    background-color: #F2F2F7;
+    padding-top: 10px;
+    padding-right: 100px;
+    border-width: 0px;
+}
+
+form > input[type=password]:nth-child(2){
+    border-width: 0px;
+    padding-left: 10px;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    background-color: #F2F2F7;
+    padding-top: 10px;
+    padding-right: 100px;
+    margin-top: 10px;
+}
+
+div.containerFormsLogin > div:nth-child(1) > form > button{
+    border-radius: 7px;
+    color: white;
+    background-color: #005594;
+    padding-bottom: 10px;
+    width: 277px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-width: 0px;
 }

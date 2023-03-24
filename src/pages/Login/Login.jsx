@@ -19,6 +19,9 @@ export function Login(){
     
     return(
         <>
+
+            <img className="logoSenac" src="src\img\LogoSenac.png" width={180}/>
+
             <div className="containerBtn">
                 <button onClick={handleStyleButtonStudant}>Estudante</button>
                 <button onClick={handleStyleButtonCompany}>Empresa</button>
