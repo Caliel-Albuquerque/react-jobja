@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+
+
 
 import "./../styles/FormsLogin.css"
+import { Link } from "react-router-dom";
 
-export function FormsLogin(props){
 
-    console.log(props)
-    return(
+
+export function FormsLogin(props) {
+
+    const [cnpjCompany, setCnpjCompany] = useState("")
+    const [passwordCompany, setPasswordCompany] = useState("")
+    
+
+    const handleCnpjCompany = (value) => {
+        setCnpjCompany(value.target.value)
+    }
+
+
+    const handlePasswordCompany = (value) => {
+        setPasswordCompany(value.target.value)
+
+
+    }
+
+
+
+    return (
         <>
-        
+
             <div className="containerFormsLogin">
             
 
@@ -23,19 +44,19 @@ export function FormsLogin(props){
 
                 <div className={props.styleCompany}>
                     <form className="formCompany" action="">
-                        <input type="text" required placeholder="cnpj"/>
-                        <input type="password" required placeholder="senha"/>
+                        <input value={cnpjCompany} onChange={handleCnpjCompany} type="text" required placeholder="cnpj" />
+                        <input value={passwordCompany} onChange={handlePasswordCompany} type="password" required placeholder="senha" />
 
-                        <button type="submit">Entrar</button>
+                       
                     </form>
-
+                    <button><Link style={{textDecoration: 'none', color: '#000'}} to={"/vagas"}>Entrar</Link></button>
                 </div>
 
 
 
             </div>
-        
-        
+
+
         </>
     )
 }
