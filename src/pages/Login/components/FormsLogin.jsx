@@ -37,7 +37,7 @@ export function FormsLogin(props) {
                         <input  type="text" required placeholder="Email"/>
                         <input  type="password" required placeholder="Senha"/>
 
-                        <button type="submit">Entrar</  button>
+                        <button type="submit">Entrar</button>
                     </form>
 
                 </div>
