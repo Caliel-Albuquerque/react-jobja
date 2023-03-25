@@ -45,7 +45,7 @@ export function Addvaga() {
     return (
         <>
 
-            
+            <h1>Adicione a sua Vaga</h1>
 
 
             <form className="formAddvaga" onSubmit={handleAddJob} action="">
