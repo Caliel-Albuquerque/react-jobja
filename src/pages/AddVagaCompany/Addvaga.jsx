@@ -44,6 +44,10 @@ export function Addvaga() {
 
     return (
         <>
+
+            
+
+
             <form className="formAddvaga" onSubmit={handleAddJob} action="">
 
                 <input value={nameCompany} onChange={handlenameCompany} type="text" required placeholder="nome da empresa" />
