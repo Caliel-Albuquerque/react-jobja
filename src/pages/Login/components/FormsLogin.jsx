@@ -49,7 +49,7 @@ export function FormsLogin(props) {
 
                        
                     </form>
-                    <button><Link style={{textDecoration: 'none', color: '#000'}} to={"/vagas"}>Entrar</Link></button>
+                    <button className="btnForm"><Link style={{textDecoration: 'none', color: '#fff'}} to={"/vagas"}>Entrar</Link></button>
                 </div>
 
 

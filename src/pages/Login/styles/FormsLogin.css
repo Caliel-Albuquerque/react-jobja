@@ -26,6 +26,7 @@ form > input[type=text]:nth-child(1){
     padding-top: 10px;
     padding-right: 100px;
     border-width: 0px;
+    outline: none;
 }
 
 form > input[type=password]:nth-child(2){
@@ -49,3 +50,4 @@ div.containerFormsLogin > div:nth-child(1) > form > button{
     padding-top: 10px;
     border-width: 0px;
 }
+
