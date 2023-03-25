@@ -44,7 +44,7 @@ export function Addvaga() {
 
     return (
         <>
-
+    
             <h1 className="title">Adicione a sua Vaga</h1>
 
 
