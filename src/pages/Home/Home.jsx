@@ -5,7 +5,7 @@ export function Home() {
 
     const [vagasLocalStorage, setVagasLocalStorage] = useState([]);
 
-    const vagas = []
+    const vagas = [{}]
 
     useEffect(() => {
         const vagasArmazenados = localStorage.getItem("vagas");
