@@ -4,29 +4,44 @@ import React, { useState, useEffect } from "react";
 export function Home() {
 
     const [vagasLocalStorage, setVagasLocalStorage] = useState([]);
+    
+    const array = []
 
-    const vagas = [{}]
+    const vagasArmazenados = JSON.parse(localStorage.getItem("vagas")) ;
+    
+    const newArray = [...array, vagasArmazenados]
 
     // useEffect(() => {
-    //     const vagasArmazenados = localStorage.getItem("vagas");
-    //     if (vagasArmazenados) {
-    //         setVagasLocalStorage(JSON.parse(vagasArmazenados));
 
-    //         vagasLocalStorage.map((item) => {
-    //             vagas.push(item)
-    //         })
+    //     const localStorageGet = () => {
+    //         const vagasArmazenados = localStorage.getItem("vagas");
+    //         // setVagasLocalStorage(JSON.parse(vagasArmazenados));
+
+    //         // if (vagasArmazenados) {
+    //         //     setVagasLocalStorage(JSON.parse(vagasArmazenados));
+
+                
+                
+    //         // }
     //     }
-    // }, []);
 
-    console.log(vagas)
+    //    localStorageGet();
+        
+
+
+    // }, [vagasLocalStorage]);
+
+    
+    console.log(newArray);
+    
 
     return (
         <>
-            {
-                vagas.map((vaga) => (
+            {/* {
+                vagasLocalStorage.map((vaga) => (
                     <h1>{vaga.nameCompany}</h1>
                 ))
-            }
+            } */}
         </>
     )
 }
