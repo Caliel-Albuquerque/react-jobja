@@ -20,7 +20,7 @@ export function Login(){
     return(
         <>
 
-            <img className="logoSenac" src="https://github.com/Caliel-Albuquerque/react-jobja/blob/master/public/imgs/LogoSenac.png" width={180}/>
+            <img className="logoSenac" src="C:\Users\calie\OneDrive\Documentos\GitHub\react-jobja\public\imgs\LogoSenac.png" width={180}/>
 
             <div className="containerBtn">
                 <button onClick={handleStyleButtonStudant}>Estudante</button>
