@@ -1,0 +1,26 @@
+{
+    "background_color": "#ffffff",
+    "description": "Site de jovem aprendiz",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "webapp-financas.vercel",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "webapp-financas.vercel",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "categories": [
+      "finance"
+    ],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "public/icon.webp",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+      
+    ],
+    "shortcuts": []
+  }
