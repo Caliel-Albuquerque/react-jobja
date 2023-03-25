@@ -3,10 +3,10 @@
     "description": "Site de jovem aprendiz",
     "dir": "ltr",
     "display": "standalone",
-    "name": "webapp-financas.vercel",
+    "name": "jobJA",
     "orientation": "any",
     "scope": "/",
-    "short_name": "webapp-financas.vercel",
+    "short_name": "jobJA",
     "start_url": "/",
     "theme_color": "#ffffff",
     "categories": [

@@ -7,14 +7,16 @@ export function Home() {
 
     const vagas = [{}]
 
-    useEffect(() => {
-        const vagasArmazenados = localStorage.getItem("vagas");
-        if (vagasArmazenados) {
-            setVagasLocalStorage(JSON.parse(vagasArmazenados));
+    // useEffect(() => {
+    //     const vagasArmazenados = localStorage.getItem("vagas");
+    //     if (vagasArmazenados) {
+    //         setVagasLocalStorage(JSON.parse(vagasArmazenados));
 
-            vagas.push(vagasLocalStorage)
-        }
-    }, []);
+    //         vagasLocalStorage.map((item) => {
+    //             vagas.push(item)
+    //         })
+    //     }
+    // }, []);
 
     console.log(vagas)
 
