@@ -6,17 +6,15 @@ const urlsToCache = [
 
   'src/pages/AddVagaCompany/AddVaga.jsx',
 
-  'src/pages/AddVagaCompany/styles/AddVagaStyle.css',
+  
 
   'src/pages/Home/Home.jsx',
 
   'src/pages/Home/styles/Home.css',
 
-  'src/pages/Login/Login.jsx',
+  
 
-  'src/pages/Login/styles/FormsLogin.css',
-
-  'src/pages/Login/components/FormsLogin.jsx'
+  
 
   
   
