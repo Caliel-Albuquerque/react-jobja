@@ -1,18 +1,24 @@
 const CACHE_NAME = 'pwaTeste+-v1.2';
 const urlsToCache = [
-  '/index.html',
-  '/src/Pages/Home/Home.jsx',
+  'src/App.jsx',
+  
+  'src/config/routes.jsx',
 
-  '/src/Pages/js/main.js',
+  'src/pages/AddVagaCompany/AddVaga.jsx',
 
+  'src/pages/AddVagaCompany/styles/AddVagaStyle.css',
 
-  '/assets/img/blog/blog-1.webp',
-  '/assets/img/blog/blog-2.webp',
-  '/assets/img/blog/blog-3.webp',
-  '/assets/img/blog/blog-4.webp',
-  '/assets/img/blog/blog-5.webp',
-  '/assets/img/blog/blog-6.webp',
-  '/assets/img/favicon1.png',
+  'src/pages/Home/Home.jsx',
+
+  'src/pages/Home/styles/Home.css',
+
+  'src/pages/Login/Login.jsx',
+
+  'src/pages/Login/styles/FormsLogin.css',
+
+  'src/pages/Login/components/FormsLogin.jsx'
+
+  
   
 ];
 
