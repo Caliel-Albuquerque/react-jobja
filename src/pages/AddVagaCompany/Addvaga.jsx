@@ -42,7 +42,7 @@ export function Addvaga() {
 
         const timer = setTimeout(() => {
             setRedirect(true);
-        }, 3000);
+        },2000);
         return () => clearTimeout(timer);
     }
 

@@ -34,7 +34,7 @@ export function FormsLogin(props) {
 
             const timer = setTimeout(() => {
                 setRedirect(true);
-            }, 3000);
+            }, 2000);
             return () => clearTimeout(timer);
         } else {
             window.alert("cnpj ou senha errados")
