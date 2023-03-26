@@ -34,7 +34,7 @@ export function Addvaga() {
 
     const handleAddJob = (event) => {
         event.preventDefault();
-        const newJob = { id: v4(), nameCompany: nameCompany, nameJob: nameJob, description: description, salary: salaty }
+        const newJob = { id: v4(), nameCompany: nameCompany, nameJob: nameJob, description: description, salary: salaty, logo: "/imgs/logoCompany.png" }
 
         setListJobs([...listJobs, newJob])
 

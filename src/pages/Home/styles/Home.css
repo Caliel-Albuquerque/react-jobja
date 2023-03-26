@@ -1,0 +1,24 @@
+.listJobs{
+    list-style: none !important;
+
+    padding: 0;
+    
+    width: 100%;
+}
+
+.listJobs li{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 2rem;
+}
+
+.content h1, h3, h4{
+    margin: 0;
+}
+
+.content h1{
+    text-transform: uppercase;
+}
