@@ -3,45 +3,40 @@ import React, { useState, useEffect } from "react";
 
 export function Home() {
 
-    const [vagasLocalStorage, setVagasLocalStorage] = useState([]);
-    
-    const array = []
-
-    const vagasArmazenados = JSON.parse(localStorage.getItem("vagas")) ;
-    
-    const newArray = [...array, vagasArmazenados]
-
-    // useEffect(() => {
-
-    //     const localStorageGet = () => {
-    //         const vagasArmazenados = localStorage.getItem("vagas");
-    //         // setVagasLocalStorage(JSON.parse(vagasArmazenados));
-
-    //         // if (vagasArmazenados) {
-    //         //     setVagasLocalStorage(JSON.parse(vagasArmazenados));
-
-                
-                
-    //         // }
-    //     }
-
-    //    localStorageGet();
-        
+    const [vagasArray, setVagasArray] = useState([])
 
 
-    // }, [vagasLocalStorage]);
 
-    
-    console.log(newArray);
-    
+
+    useEffect(() => {
+        // Obtém a lista de produtos armazenada no sessionStorage
+        const listaDeVagas = sessionStorage.getItem('vagas');
+        if (listaDeVagas) {
+            // Converte a string JSON em um array de objetos
+            const listaDeVagasArray = JSON.parse(listaDeVagas);
+            setVagasArray(listaDeVagasArray);
+        }
+    }, []);
+
+
+
+
+
 
     return (
         <>
-            {/* {
-                vagasLocalStorage.map((vaga) => (
-                    <h1>{vaga.nameCompany}</h1>
-                ))
-            } */}
+            <ul>
+
+                {
+                    vagasArray.map((vaga) => (
+                        <li key={vaga.id}>
+                            <h1>{vaga.nameCompany}</h1>
+                        </li>
+                    ))
+                }
+
+            </ul>
+
         </>
     )
 }

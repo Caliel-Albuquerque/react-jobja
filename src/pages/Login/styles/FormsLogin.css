@@ -17,6 +17,30 @@
     display: none;
 }
 
+.containerBtn{
+    background-color: #eeeeef;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 0.5rem;
+}
+
+.containerBtn button{
+    
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.bgWhite{
+    background-color: #fff;
+}
 
 form > input[type=text]:nth-child(1){
     padding-left: 10px;

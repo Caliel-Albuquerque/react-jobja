@@ -6,15 +6,18 @@ export function Login(){
 
     const [styleNoneStudant, setStyleNoneStudant] = useState("")
     const [styleNoneCompany, setStyleNoneCompany] = useState("noneForm")
+    
 
     function handleStyleButtonCompany()  {
         setStyleNoneStudant("noneForm")
         setStyleNoneCompany("")
+        
     }
 
     function handleStyleButtonStudant()  {
         setStyleNoneStudant("")
         setStyleNoneCompany("noneForm")
+        
     }
     
     return(
@@ -23,8 +26,8 @@ export function Login(){
             <img className="logoSenac" src="/imgs/LogoSenac.png" width={180}/>
 
             <div className="containerBtn">
-                <button onClick={handleStyleButtonStudant}>Estudante</button>
-                <button onClick={handleStyleButtonCompany}>Empresa</button>
+                <button className="styleBtn" onClick={handleStyleButtonStudant}>Estudante</button>
+                <button className="styleBtn" onClick={handleStyleButtonCompany}>Empresa</button>
             </div>
 
 

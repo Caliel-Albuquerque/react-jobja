@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4, v4 } from 'uuid';
+import { Navigate } from 'react-router-dom';
 // import JOBS from "../../data/data";
 
 import "./style/AddvagaStyle.css"
+
 
 export function Addvaga() {
 
@@ -11,6 +14,7 @@ export function Addvaga() {
     const [salaty, setSalary] = useState("");
 
     const [listJobs, setListJobs] = useState([])
+    const [redirect, setRedirect] = useState(false);
 
     const handlenameCompany = (value) => {
         setNameCompany(value.target.value)
@@ -30,21 +34,28 @@ export function Addvaga() {
 
     const handleAddJob = (event) => {
         event.preventDefault();
-        const newJob = { index: listJobs.indexOf.length, nameCompany: nameCompany, nameJob: nameJob, description: description, salary: salaty }
+        const newJob = { id: v4(), nameCompany: nameCompany, nameJob: nameJob, description: description, salary: salaty }
 
         setListJobs([...listJobs, newJob])
 
+        window.alert("Vaga adicionada")
 
+        const timer = setTimeout(() => {
+            setRedirect(true);
+        }, 3000);
+        return () => clearTimeout(timer);
     }
 
     useEffect(() => {
-        localStorage.setItem("vagas", JSON.stringify(listJobs));
+        sessionStorage.setItem('vagas', JSON.stringify(listJobs));
     }, [listJobs]);
 
 
-    return (
+
+
+    return redirect ? <Navigate to="/home" /> : (
         <>
-    
+
             <h1 className="title">Adicione a sua Vaga</h1>
 
 
