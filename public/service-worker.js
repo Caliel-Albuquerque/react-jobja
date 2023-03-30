@@ -2,7 +2,7 @@ const CACHE_NAME = 'pwaTeste+-v1.2';
 const urlsToCache = [
   'src/App.jsx',
   
-  'src/config/routes.jsx',
+  '../src/config/routes.jsx',
 
   'src/pages/AddVagaCompany/AddVaga.jsx',
 

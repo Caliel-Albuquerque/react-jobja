@@ -7,7 +7,7 @@
     "orientation": "any",
     "scope": "/",
     "short_name": "jobJA",
-    "start_url": "https://jobja.netlify.app/",
+    "start_url": "/",
     "theme_color": "#ffffff",
     "categories": [
       "finance"
